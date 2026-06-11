@@ -1,7 +1,7 @@
-<h1 align="center">bio.kowkodivka</h1>
+<h1 align="center">kowkodivka</h1>
 
 <p align="center">
-    Personal website showcasing information about me
+    My personal website
 </p>
 
 <p align="center">
@@ -12,23 +12,39 @@
 
 # Overview
 
-bio.kowkodivka is my personal website — a simple digital profile where I keep
-the most important info about myself, useful links, and ways to reach me.
+A simple digital profile featuring my essential info, links, and ways to connect.
 
-## Development & Build
+## Developing
 
-To run the project locally:
+1. Install dependencies
 
-```shell
-bun install
-bun dev
-```
+   ```sh
+   bun install
+   ```
 
-To build it for production:
+2. Start the development server
 
-```shell
-bun build
-```
+   ```sh
+   bun run dev
+   ```
+
+### Building
+
+1. Build the site
+
+   ```sh
+   bun run build
+   ```
+
+2. Preview the built site
+
+   ```sh
+   bun run preview
+   ```
+
+## License
+
+This project is licensed under the GNU General Public License v3.0. See the [LICENSE.md](./LICENSE.md) file for details.
 
 <p align="center">
     🤍💙🤍
