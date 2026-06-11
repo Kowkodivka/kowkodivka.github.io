@@ -2,6 +2,8 @@
 
 My personal website, built with [Vite](https://vite.dev/) and [SolidJS](https://www.solidjs.com/).
 
+![Preview](images/preview.png)
+
 ## Developing
 
 1. Install dependencies
