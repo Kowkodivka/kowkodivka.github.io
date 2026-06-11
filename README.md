@@ -1,18 +1,6 @@
-<h1 align="center">kowkodivka</h1>
+# kowkodivka
 
-<p align="center">
-    My personal website
-</p>
-
-<p align="center">
-    <a href="https://bio.kowkodivka.icu">
-        https://bio.kowkodivka.icu
-    </a>
-</p>
-
-# Overview
-
-A simple digital profile featuring my essential info, links, and ways to connect.
+My personal website, built with [Vite](https://vite.dev/) and [SolidJS](https://www.solidjs.com/).
 
 ## Developing
 
@@ -45,7 +33,3 @@ A simple digital profile featuring my essential info, links, and ways to connect
 ## License
 
 This project is licensed under the GNU General Public License v3.0. See the [LICENSE.md](./LICENSE.md) file for details.
-
-<p align="center">
-    🤍💙🤍
-</p>
