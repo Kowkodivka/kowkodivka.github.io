@@ -20,7 +20,10 @@ interface Locale {
 type RawDictionary = typeof en.dict;
 type Dictionary = i18n.Flatten<RawDictionary>;
 
-const locales: Locale[] = [{ locale: "en-US", label: "EN", name: "English" }];
+const locales: Locale[] = [
+  { locale: "en-US", label: "EN", name: "English" },
+  { locale: "ru", label: "RU", name: "Русский" },
+];
 
 interface I18nContextValue {
   t: i18n.NullableTranslator<Dictionary>;

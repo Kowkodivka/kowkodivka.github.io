@@ -1,7 +1,7 @@
 import { useI18n } from "@/providers/I18nProvider";
 import { Component, createSignal, onCleanup, onMount } from "solid-js";
 import { Cake, Clock, MapPin } from "lucide-solid";
-import avatar from "@/assets/avatar.jpeg";
+import avatar from "@/assets/avatar.jpg";
 import Socials from "@/components/about/Socials";
 import type { Social } from "@/types";
 
@@ -61,7 +61,7 @@ const ProfileUserSummary: Component<ProfileUserSummaryProps> = ({
           <div class="avatar">
             <div class="size-36 rounded-full sm:size-full">
               <a
-                href="https://x.com/KUROFENNEK/status/2026002714300440634"
+                href="https://x.com/Vinqou/status/2062265467520078195"
                 target="_blank"
                 rel="noopener noreferrer"
                 title={t("about.avatarAuthor")}

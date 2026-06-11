@@ -1,5 +1,5 @@
 import { Social } from "@/types";
-import { siGithub, siTelegram, siX } from "simple-icons";
+import { siDiscord, siGitlab, siTelegram, siX } from "simple-icons";
 import ProfileDetailsSection from "@/components/about/ProfileDetailsSection";
 import ProfileUserSummary from "@/components/about/ProfileUserSummary";
 import Socials from "@/components/about/Socials";
@@ -7,8 +7,12 @@ import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 
 const socials: Social[] = [
   {
-    icon: siGithub,
+    icon: siGitlab,
     link: "https://github.com/Kowkodivka",
+  },
+  {
+    icon: siDiscord,
+    link: "https://discord.com/users/796709259256791090",
   },
   {
     icon: siTelegram,

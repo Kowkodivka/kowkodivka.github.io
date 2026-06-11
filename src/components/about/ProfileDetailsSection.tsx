@@ -139,16 +139,16 @@ const ProfileDetailsSection = () => {
           </div>
 
           <div class="collapse-content text-sm">
-            <p class="mb-4">{t("details.about.intro")}</p>
-
-            <p class="mb-4">{t("details.about.philosophy")}</p>
+            <p class="mb-4">{t("details.about.bio")}</p>
 
             <div class="mb-4">
-              <p class="font-medium mb-2">{t("details.about.whenNotCoding")}</p>
+              <p class="font-medium mb-1.5">
+                {t("details.about.interestsTitle")}
+              </p>
               <ul class="list-disc list-outside ml-5 space-y-1 text-sm">
-                <li>{t("details.about.activities.0")}</li>
-                <li>{t("details.about.activities.1")}</li>
-                <li>{t("details.about.activities.2")}</li>
+                <li>{t("details.about.interests.0")}</li>
+                <li>{t("details.about.interests.1")}</li>
+                <li>{t("details.about.interests.2")}</li>
               </ul>
             </div>
 

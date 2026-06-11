@@ -6,13 +6,13 @@ My personal website, built with [Vite](https://vite.dev/) and [SolidJS](https://
 
 1. Install dependencies
 
-   ```sh
+   ```bash
    bun install
    ```
 
 2. Start the development server
 
-   ```sh
+   ```bash
    bun run dev
    ```
 
@@ -20,13 +20,13 @@ My personal website, built with [Vite](https://vite.dev/) and [SolidJS](https://
 
 1. Build the site
 
-   ```sh
+   ```bash
    bun run build
    ```
 
 2. Preview the built site
 
-   ```sh
+   ```bash
    bun run preview
    ```
 
