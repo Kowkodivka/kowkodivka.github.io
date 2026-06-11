@@ -7,7 +7,7 @@ import Socials from "@/components/about/Socials";
 const socials: Social[] = [
   {
     icon: siGitlab,
-    link: "https://github.com/Kowkodivka",
+    link: "https://gitlab.com/Kowkodivka",
   },
   {
     icon: siDiscord,
