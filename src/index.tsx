@@ -7,6 +7,7 @@ import { Router, Route } from "@solidjs/router";
 import AboutPage from "@/pages/AboutPage";
 import { ParentComponent } from "solid-js";
 import { I18nProvider, useI18n } from "@/providers/I18nProvider";
+import LanguageSwitcher from "./components/ui/LanguageSwitcher";
 
 const root = document.getElementById("root");
 
@@ -14,7 +15,14 @@ const RootLayout: ParentComponent = ({ children }) => {
   const { dict, isTransitioning } = useI18n();
 
   return (
-    <div classList={{ "opacity-50 transition-opacity": isTransitioning() }}>
+    <div
+      class="relative min-h-svh"
+      classList={{ "opacity-50 transition-opacity": isTransitioning() }}
+    >
+      <div class="absolute top-4 right-4 z-50">
+        <LanguageSwitcher />
+      </div>
+
       <Suspense>
         <Show when={dict()}>{children}</Show>
       </Suspense>

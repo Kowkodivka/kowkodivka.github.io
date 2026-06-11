@@ -3,7 +3,6 @@ import { siDiscord, siGitlab, siTelegram, siX } from "simple-icons";
 import ProfileDetailsSection from "@/components/about/ProfileDetailsSection";
 import ProfileUserSummary from "@/components/about/ProfileUserSummary";
 import Socials from "@/components/about/Socials";
-import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 
 const socials: Social[] = [
   {
@@ -25,11 +24,7 @@ const socials: Social[] = [
 ];
 
 const AboutPage = () => (
-  <div class="relative flex items-start sm:items-center justify-center min-h-svh">
-    <div class="absolute top-4 right-4 z-50">
-      <LanguageSwitcher />
-    </div>
-
+  <div class="flex items-start sm:items-center justify-center min-h-svh">
     <div class="flex flex-col sm:flex-row max-w-2xl w-full gap-3 sm:gap-6 px-4 py-16 mx-auto overflow-y-auto">
       <ProfileUserSummary socials={socials} />
       <Socials
