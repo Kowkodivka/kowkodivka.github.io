@@ -207,17 +207,16 @@ const BackgroundParticles: Component = () => {
     let resizeTimer: ReturnType<typeof setTimeout>;
 
     const mouse: MouseState = { x: -9999, y: -9999, active: false };
-    const particles: Particle[] = [];
+    let particles: Particle[] = [];
     let currentPalette = FALLBACK_COLORS;
 
     const resizeCanvas = () => {
       width = canvas.width = document.documentElement.clientWidth;
       height = canvas.height = document.documentElement.clientHeight;
 
-      if (particles.length === 0) {
-        for (let i = 0; i < CONFIG.PARTICLE_COUNT; i++) {
-          particles.push(new Particle(width, height, currentPalette));
-        }
+      particles = [];
+      for (let i = 0; i < CONFIG.PARTICLE_COUNT; i++) {
+        particles.push(new Particle(width, height, currentPalette));
       }
     };
 
@@ -303,8 +302,12 @@ const BackgroundParticles: Component = () => {
 
     window.addEventListener("resize", handleResize);
 
-    document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mouseleave", handleMouseLeave);
+    const hasHover = window.matchMedia("(hover: hover)").matches;
+
+    if (hasHover) {
+      document.addEventListener("mousemove", handleMouseMove);
+      document.addEventListener("mouseleave", handleMouseLeave);
+    }
 
     loop();
 
@@ -319,8 +322,10 @@ const BackgroundParticles: Component = () => {
     onCleanup(() => {
       window.removeEventListener("resize", handleResize);
 
-      document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("mouseleave", handleMouseLeave);
+      if (hasHover) {
+        document.removeEventListener("mousemove", handleMouseMove);
+        document.removeEventListener("mouseleave", handleMouseLeave);
+      }
 
       clearTimeout(resizeTimer);
       cancelAnimationFrame(animationFrameId);
