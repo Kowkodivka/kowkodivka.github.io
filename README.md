@@ -16,7 +16,7 @@ My personal website, built with [Vite](https://vite.dev/) and [SolidJS](https://
    bun run dev
    ```
 
-### Building
+## Building
 
 1. Build the site
 
