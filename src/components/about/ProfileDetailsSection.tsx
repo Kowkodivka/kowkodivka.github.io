@@ -130,8 +130,8 @@ const ProfileDetailsSection = () => {
 
   return (
     <div class="flex-1">
-      <div class="w-full join join-vertical bg-base-100">
-        <div class="collapse collapse-arrow join-item border-base-300 border rounded-t-2xl">
+      <div class="w-full join join-vertical">
+        <div class="collapse collapse-arrow join-item border-base-300 border bg-base-100 rounded-t-2xl">
           <input type="radio" name="my-accordion-4" checked={true} />
 
           <div class="flex flex-row items-center collapse-title font-semibold gap-1.5">
@@ -158,7 +158,7 @@ const ProfileDetailsSection = () => {
           </div>
         </div>
 
-        <div class="collapse collapse-arrow join-item border-base-300 border rounded-b-2xl">
+        <div class="collapse collapse-arrow join-item border-base-300 border bg-base-100 rounded-b-2xl">
           <input type="radio" name="my-accordion-4" />
 
           <div class="flex flex-row items-center collapse-title font-semibold gap-1.5">

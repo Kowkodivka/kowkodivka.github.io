@@ -201,6 +201,13 @@ const BackgroundParticles: Component = () => {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
+    const isTouchDevice = (): boolean => {
+      if (navigator.maxTouchPoints > 0) return true;
+      return false;
+    };
+
+    const isTouch = isTouchDevice();
+
     let width: number;
     let height: number;
     let animationFrameId: number;
@@ -302,9 +309,7 @@ const BackgroundParticles: Component = () => {
 
     window.addEventListener("resize", handleResize);
 
-    const hasHover = window.matchMedia("(hover: hover)").matches;
-
-    if (hasHover) {
+    if (!isTouch) {
       document.addEventListener("mousemove", handleMouseMove);
       document.addEventListener("mouseleave", handleMouseLeave);
     }
@@ -322,7 +327,7 @@ const BackgroundParticles: Component = () => {
     onCleanup(() => {
       window.removeEventListener("resize", handleResize);
 
-      if (hasHover) {
+      if (!isTouch) {
         document.removeEventListener("mousemove", handleMouseMove);
         document.removeEventListener("mouseleave", handleMouseLeave);
       }
