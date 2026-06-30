@@ -1,7 +1,7 @@
 {
   "name": "kowkodivka",
-  "version": "0.0.0",
-  "description": "My personal website",
+  "version": "1.0.0",
+  "description": "My personal website, built with Vite and SolidJS.",
   "type": "module",
   "scripts": {
     "start": "vite",
