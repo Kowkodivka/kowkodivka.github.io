@@ -1,13 +1,13 @@
 import { Social } from "@/types";
-import { siDiscord, siGitlab, siTelegram, siX } from "simple-icons";
+import { siDiscord, siGithub, siTelegram, siX } from "simple-icons";
 import ProfileDetailsSection from "@/components/about/ProfileDetailsSection";
 import ProfileUserSummary from "@/components/about/ProfileUserSummary";
 import Socials from "@/components/about/Socials";
 
 const socials: Social[] = [
   {
-    icon: siGitlab,
-    link: "https://gitlab.com/Kowkodivka",
+    icon: siGithub,
+    link: "https://github.com/Kowkodivka",
   },
   {
     icon: siDiscord,
