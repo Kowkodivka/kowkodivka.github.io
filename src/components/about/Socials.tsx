@@ -1,6 +1,6 @@
 import { Component, JSX } from "solid-js";
 import { Social } from "@/types";
-import SiIcon from "@/components/ui/SiIcon";
+import RenderIcon from "@/components/ui/RenderIcon";
 
 interface SocialsProps extends JSX.HTMLAttributes<HTMLDivElement> {
   socials: Social[];
@@ -16,7 +16,7 @@ const Socials: Component<SocialsProps> = (props) => {
           rel="noopener noreferrer"
           class="btn btn-circle"
         >
-          <SiIcon icon={icon} class="size-5 dark:invert" />
+          <RenderIcon icon={icon} class="size-5" />
         </a>
       ))}
     </div>
