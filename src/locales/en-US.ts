@@ -1,29 +1,30 @@
 const dict = {
   about: {
     avatarAuthor: "Original image author",
-    name: "Evgeniy Sobolev",
+    name: "Yuriy Khoshin",
     nickname: "Kowkodivka",
     pronouns: "he/him",
-    role: "Full-Stack Developer",
-    location: "Novokuznetsk, Russia",
+    role: "Full-Stack Lamer",
+    location: "Tomsk, Russia",
     timezone: {
-      id: "Asia/Novosibirsk",
+      id: "Asia/Tomsk",
     },
     birthday: "August 16",
   },
   details: {
     about: {
       sectionName: "About",
-      bio: "I'm a full-stack developer focused on building straightforward and functional apps. I like clean code, simple interfaces, and solving actual problems without overcomplicating things.",
+      bio: "I'm a full-stack lamer - I've tried myself in a bunch of different fields, gaming, programming, physics, a bit of everything.",
       interestsTitle: "In my free time, I like:",
       interests: [
-        "trying out new tools and patterns",
-        "tinkering with side projects",
-        "exploring open-source code",
+        "playing games",
+        "writing code, mostly without a real plan",
+        "physics (probably)",
       ],
       lookingFor:
-        "I'm looking for a collaborative team where I can take on real tasks, learn from experienced developers, and keep growing.",
-      closing: "Feel free to reach out!",
+        "Science ended up being the one I stuck with - just got into Tomsk State University.",
+      closing:
+        "Feel free to reach out, I promise I know slightly more than this bio suggests!",
     },
     techStack: {
       sectionName: "Tech Stack",

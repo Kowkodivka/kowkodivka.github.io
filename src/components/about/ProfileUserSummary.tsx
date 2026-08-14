@@ -61,7 +61,7 @@ const ProfileUserSummary: Component<ProfileUserSummaryProps> = ({
           <div class="avatar">
             <div class="size-36 rounded-full sm:size-full">
               <a
-                href="https://x.com/Vinqou/status/2062265467520078195"
+                href="https://x.com/Fish7163/status/2061812868908200052"
                 target="_blank"
                 rel="noopener noreferrer"
                 title={t("about.avatarAuthor")}

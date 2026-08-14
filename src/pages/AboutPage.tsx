@@ -15,7 +15,7 @@ const socials: Social[] = [
   },
   {
     icon: siTelegram,
-    link: "https://t.me/lesbiansexlover",
+    link: "https://t.me/koshika",
   },
   {
     icon: siX,
