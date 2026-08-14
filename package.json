@@ -1,8 +1,9 @@
 {
-  "name": "kowkodivka",
+  "name": "kowkodivka.github.io",
   "version": "1.0.0",
   "description": "My personal website, built with Vite and SolidJS.",
   "type": "module",
+  "private": "true",
   "scripts": {
     "start": "vite",
     "dev": "vite",

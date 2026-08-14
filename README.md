@@ -1,4 +1,4 @@
-# Website
+# kowkodivka.github.io
 
 My personal website, built with [Vite](https://vite.dev/) and [SolidJS](https://www.solidjs.com/).
 
