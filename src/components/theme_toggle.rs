@@ -6,8 +6,16 @@ const systemDark = matchMedia("(prefers-color-scheme: dark)").matches;
 const current = root.dataset.theme || (systemDark ? "dark" : "light");
 const next = current === "dark" ? "light" : "dark";
 
-root.dataset.theme = next;
-localStorage.setItem("theme", next);
+const apply = () => {
+    root.dataset.theme = next;
+    localStorage.setItem("theme", next);
+};
+
+if (document.startViewTransition) {
+    document.startViewTransition(apply);
+} else {
+    apply();
+}
 "#;
 
 #[component]
