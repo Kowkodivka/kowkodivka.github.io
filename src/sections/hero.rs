@@ -100,7 +100,7 @@ fn Photo() -> Element {
                 Corners {}
 
                 div { class: "mb-2.5 flex justify-between",
-                    span { class: "k-label text-[11px]", "IMG_001.JPG" }
+                    span { class: "k-label text-[11px]", "FURRY_PORN.JPEG" }
                     span { class: "k-label flex items-center gap-1.5 text-[11px] text-accent-ink",
                         span { class: "size-1.5 animate-pulse rounded-full bg-current" }
                         "REC"
