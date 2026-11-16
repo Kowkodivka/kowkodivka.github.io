@@ -6,6 +6,8 @@ edition = "2024"
 
 [dependencies]
 dioxus = { version = "0.7.1", features = [] }
+gloo-timers = { version = "0.4.1", features = ["futures"] }
+js-sys = "0.3.107"
 
 [features]
 default = ["web"]
