@@ -68,6 +68,9 @@ struct Node {
     broken_right: bool,
     broken_down: bool,
     square: f64,
+    dust: u32,
+    dust_x: f64,
+    dust_y: f64,
 }
 
 struct Grid {
@@ -107,6 +110,13 @@ impl Grid {
                     } else {
                         0.0
                     },
+                    dust: if chaos > 0.55 {
+                        (random.f64() * 3.0 * chaos) as u32
+                    } else {
+                        0
+                    },
+                    dust_x: between(&mut random, -1.0, 1.0),
+                    dust_y: between(&mut random, -1.0, 1.0),
                 });
             }
         }
@@ -195,6 +205,16 @@ impl Grid {
                     node.square,
                     node.square,
                 );
+            }
+        }
+
+        ctx.set_global_alpha(0.45);
+        for (node, &(x, y)) in self.nodes.iter().zip(&points) {
+            for step in 1..=node.dust {
+                let step = step as f64;
+                let dx = node.dust_x * 14.0 * step + (time + step + node.phase).sin() * 2.0;
+                let dy = node.dust_y * 10.0 * step;
+                ctx.fill_rect(x + dx, y + dy, 1.6, 1.6);
             }
         }
 
