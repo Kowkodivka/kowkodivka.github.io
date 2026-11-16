@@ -3,10 +3,14 @@ use dioxus::prelude::*;
 mod components;
 mod content;
 mod fonts;
+mod grid;
+mod sections;
 
-use components::{Footer, Header};
-
-use crate::{components::Section, content::SECTIONS};
+use crate::{
+    components::{Footer, Header, Section},
+    content::SECTIONS,
+    sections::Hero,
+};
 
 const STYLES: Asset = asset!("/assets/tailwind.css");
 
@@ -23,10 +27,7 @@ fn App() -> Element {
 
         Header {}
         main { id: "top",
-            div { class: "k-wrap py-32",
-                p { class: "k-label", "/ 00 индекс" }
-            }
-
+            Hero {}
             for info in SECTIONS {
                 Section { info, class: "border-t border-rule" }
             }
