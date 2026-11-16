@@ -1,6 +1,9 @@
 use dioxus::prelude::*;
 
-use crate::content::{NICK, SECTIONS};
+use crate::{
+    components::{Clock, ThemeToggle},
+    content::{NICK, SECTIONS},
+};
 
 #[component]
 pub fn Header() -> Element {
@@ -9,7 +12,10 @@ pub fn Header() -> Element {
             div { class: "k-wrap flex h-16 items-center justify-between gap-6",
                 Logo {}
                 Nav {}
-                div { class: "flex items-center gap-3.5" }
+                div { class: "flex items-center gap-3.5",
+                    Clock {}
+                    ThemeToggle {}
+                }
             }
         }
     }
