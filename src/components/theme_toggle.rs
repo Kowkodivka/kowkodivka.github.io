@@ -1,4 +1,5 @@
 use dioxus::prelude::*;
+use dioxus_free_icons::{Icon, icons::ld_icons::LdContrast};
 
 const TOGGLE_THEME: &str = r#"
 const root = document.documentElement;
@@ -28,16 +29,7 @@ pub fn ThemeToggle() -> Element {
             onclick: |_| {
                 document::eval(TOGGLE_THEME);
             },
-            svg {
-                width: "16",
-                height: "16",
-                view_box: "0 0 24 24",
-                fill: "none",
-                stroke: "currentColor",
-                stroke_width: "1.7",
-                circle { cx: "12", cy: "12", r: "8" }
-                path { d: "M12 4a8 8 0 0 0 0 16z", fill: "currentColor" }
-            }
+            Icon { icon: LdContrast, width: 16, height: 16 }
         }
     }
 }

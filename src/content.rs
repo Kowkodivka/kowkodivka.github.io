@@ -1,7 +1,7 @@
 pub const NICK: &str = "Kowkodivka";
 
 pub struct HeroText {
-    pub role: &'static str,
+    pub roles: &'static [&'static str],
     pub first_name: &'static str,
     pub last_name: &'static str,
     pub intro: &'static str,
@@ -13,15 +13,15 @@ pub struct HeroText {
 }
 
 pub const HERO: HeroText = HeroText {
-    role: "full-stack ламер * ТГУ",
+    roles: &["Студент", "Программист", "Физик"],
     first_name: "Юрий",
     last_name: "Хошин",
-    intro: "я еблан",
-    primary_action: "написать",
-    secondary_action: "проекты",
-    coordinates: "56.48° N * 84.95° E",
-    city: "ТОМСК",
-    wordmark: "KOWKODIVKA",
+    intro: "«Три кварка для мистера Марка!» — Джеймс Джойс",
+    primary_action: "Написать",
+    secondary_action: "Проекты",
+    coordinates: "56°29′ N, 84°57′ E",
+    city: "Томск",
+    wordmark: "Kowkodivka",
 };
 
 pub const CLOCK_LABEL: &str = "UTC+7";

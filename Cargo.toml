@@ -6,6 +6,7 @@ edition = "2024"
 
 [dependencies]
 dioxus = { version = "0.7.1", features = [] }
+dioxus-free-icons = { version = "0.10.0", features = ["lucide"] }
 fastrand = "2.5.0"
 gloo-timers = { version = "0.4.1", features = ["futures"] }
 js-sys = "0.3.107"
