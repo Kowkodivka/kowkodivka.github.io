@@ -84,6 +84,6 @@ pub const TEXTS: Texts = Texts {
     ],
 
     footer: FooterText {
-        to_top: "наверх ↑"
+        to_top: "наверх"
     },
 };

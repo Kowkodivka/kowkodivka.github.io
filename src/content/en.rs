@@ -84,6 +84,6 @@ pub const TEXTS: Texts = Texts {
     ],
 
     footer: FooterText {
-        to_top: "back to top ↑",
+        to_top: "back to top",
     },
 };
