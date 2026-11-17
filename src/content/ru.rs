@@ -1,17 +1,17 @@
 use super::{FooterText, HeaderText, HeroText, SectionInfo, Texts};
 
 pub const TEXTS: Texts = Texts {
-    page_title: "Kowkodivka",
+    page_title: "Кошкодiвка",
     nick: "Kowkodivka",
 
     header: HeaderText {
         clock_label: "UTC+7",
-        nav_label: "разделы",
-        lang_button: "switch to English",
+        nav_label: "Разделы",
+        lang_button: "Switch to English",
     },
 
     hero: HeroText {
-        index_label: "индекс",
+        index_label: "Индекс",
         roles: &["Студент", "Программист", "Физик"],
         first_name: "Юрий",
         last_name: "Хошин",

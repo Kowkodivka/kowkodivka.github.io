@@ -6,12 +6,12 @@ pub const TEXTS: Texts = Texts {
 
     header: HeaderText {
         clock_label: "UTC+7",
-        nav_label: "sections",
-        lang_button: "переключить на русский",
+        nav_label: "Sections",
+        lang_button: "Переключить на русский",
     },
 
     hero: HeroText {
-        index_label: "index",
+        index_label: "Index",
         roles: &["Student", "Programmer", "Physicist"],
         first_name: "Yuriy",
         last_name: "Khoshin",
