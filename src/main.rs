@@ -4,16 +4,15 @@ mod components;
 mod content;
 mod fonts;
 mod grid;
+mod i18n;
 mod sections;
 
-use crate::{
-    components::{Footer, Header, Section},
-    content::SECTIONS,
-    sections::Hero,
-};
+use components::{Footer, Header, Section};
+use i18n::use_texts;
+use sections::Hero;
 
-const FAVICON: Asset = asset!("/assets/favicon.ico");
 const STYLES: Asset = asset!("/assets/tailwind.css");
+const FAVICON: Asset = asset!("/assets/favicon.ico");
 
 fn main() {
     dioxus::launch(App);
@@ -21,16 +20,28 @@ fn main() {
 
 #[component]
 fn App() -> Element {
+    i18n::use_lang_provider();
+
     rsx! {
         document::Link { rel: "icon", r#type: "image/svg+xml", href: FAVICON }
         fonts::Fonts {}
-        document::Title { "Kowkodivka" }
         document::Stylesheet { href: STYLES }
+        Page {}
+    }
+}
+
+#[component]
+fn Page() -> Element {
+    let texts = use_texts();
+
+    rsx! {
+        document::Title { "{texts.page_title}" }
 
         Header {}
         main { id: "top",
             Hero {}
-            for info in SECTIONS {
+
+            for info in texts.sections {
                 Section { info, class: "border-t border-rule" }
             }
         }

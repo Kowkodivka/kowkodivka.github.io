@@ -1,10 +1,12 @@
 use dioxus::prelude::*;
 use gloo_timers::future::TimeoutFuture;
 
-use crate::content::{CLOCK_LABEL, CLOCK_OFFSET_HOURS};
+use crate::content::CLOCK_OFFSET_HOURS;
+use crate::i18n::use_texts;
 
 #[component]
 pub fn Clock() -> Element {
+    let texts = use_texts();
     let mut time = use_signal(current_time);
 
     use_future(move || async move {
@@ -15,7 +17,9 @@ pub fn Clock() -> Element {
     });
 
     rsx! {
-        span { class: "k-label tabular-nums text-fg-soft tablet:hidden", "{CLOCK_LABEL} {time}" }
+        span { class: "k-label tabular-nums text-fg-soft tablet:hidden",
+            "{texts.header.clock_label} {time}"
+        }
     }
 }
 
