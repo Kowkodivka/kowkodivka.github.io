@@ -15,7 +15,7 @@ pub const TEXTS: Texts = Texts {
         roles: &["Student", "Programmer", "Physicist"],
         first_name: "Yuriy",
         last_name: "Khoshin",
-        intro: "“Three quarks for Muster Mark!”",
+        intro: "“Three quarks for Muster Mark!” — James Joyce",
         primary_action: "Get in touch",
         secondary_action: "Projects",
         photo_alt: "avatar",
