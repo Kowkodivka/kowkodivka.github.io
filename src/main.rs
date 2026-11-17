@@ -12,6 +12,7 @@ use crate::{
     sections::Hero,
 };
 
+const FAVICON: Asset = asset!("/assets/favicon.ico");
 const STYLES: Asset = asset!("/assets/tailwind.css");
 
 fn main() {
@@ -21,8 +22,9 @@ fn main() {
 #[component]
 fn App() -> Element {
     rsx! {
-        document::Title { "Kowkodivka" }
+        document::Link { rel: "icon", r#type: "image/svg+xml", href: FAVICON }
         fonts::Fonts {}
+        document::Title { "Kowkodivka" }
         document::Stylesheet { href: STYLES }
 
         Header {}
