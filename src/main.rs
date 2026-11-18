@@ -2,7 +2,6 @@ use dioxus::prelude::*;
 
 mod components;
 mod content;
-mod fonts;
 mod grid;
 mod i18n;
 mod sections;
@@ -23,8 +22,7 @@ fn App() -> Element {
     i18n::use_lang_provider();
 
     rsx! {
-        document::Link { rel: "icon", r#type: "image/svg+xml", href: FAVICON }
-        fonts::Fonts {}
+        document::Link { rel: "icon", href: FAVICON }
         document::Stylesheet { href: STYLES }
         Page {}
     }
@@ -36,7 +34,6 @@ fn Page() -> Element {
 
     rsx! {
         document::Title { "{texts.page_title}" }
-
         Header {}
         main { id: "top",
             Hero {}

@@ -7,12 +7,13 @@ pub const TEXTS: Texts = Texts {
     header: HeaderText {
         clock_label: "UTC+7",
         nav_label: "Sections",
+        theme_button: "Change theme",
         lang_button: "Переключить на русский",
     },
 
     hero: HeroText {
         index_label: "Index",
-        roles: &["Student", "Programmer", "Physicist"],
+        roles: &["Student", "(Not a) Programmer", "(Not a) Physicist"],
         first_name: "Yuriy",
         last_name: "Khoshin",
         intro: "“Three quarks for Muster Mark!” — James Joyce",

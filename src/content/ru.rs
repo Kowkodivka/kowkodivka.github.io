@@ -7,12 +7,13 @@ pub const TEXTS: Texts = Texts {
     header: HeaderText {
         clock_label: "UTC+7",
         nav_label: "Разделы",
+        theme_button: "Сменить тему",
         lang_button: "Switch to English",
     },
 
     hero: HeroText {
         index_label: "Индекс",
-        roles: &["Студент", "Программист", "Физик"],
+        roles: &["Студент", "(Не) Программист", "(Не) Физик"],
         first_name: "Юрий",
         last_name: "Хошин",
         intro: "«Три кварка для мистера Марка!» — Джеймс Джойс",

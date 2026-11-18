@@ -24,6 +24,7 @@ pub struct Texts {
 pub struct HeaderText {
     pub clock_label: &'static str,
     pub nav_label: &'static str,
+    pub theme_button: &'static str,
     pub lang_button: &'static str,
 }
 
